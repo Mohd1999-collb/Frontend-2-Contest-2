@@ -29,13 +29,25 @@ input {
 
 .btn{
   display: flex;
-  width: 500px;
+  width: 532px;
   align-items: center;
   justify-content: center;
   height: 67px;
   background-color: white;
 }
 
+.closed{
+  /* display: none; */
+  display: block;
+}
+
+.open{
+  display: block;
+}
+
+.row{
+  display: flex;
+}
 div {
  
   font-size: 24px;
@@ -43,19 +55,19 @@ div {
   line-height: 29px;
   text-align: center;
   color: rgba(0, 0, 0, 1);
-  margin: 25px 34px;
+  margin: 25px 18px;
   cursor: pointer;
  
 }
 
 #searchBar > input{
-    width: 1050px;
+    width: 1095px;
     height: 67px;
 }
 
 table{
     color: rgba(255, 255, 255, 1);
-    width: 1050px;
+    width: 1101px;
     text-align: center;
     border: 2px solid white;
     border-collapse:collapse;

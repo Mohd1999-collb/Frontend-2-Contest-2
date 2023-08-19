@@ -1,69 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend-2 Contest_2</title>
-</head>
-<body>
-    <p>Student Management CRUD</p>   
+  </head>
+  <body>
+    <p>Student Management CRUD</p>
 
     <!-- Form -->
     <form action="#" id="stu_data">
-        <input class="student" type="text" placeholder="Name" required>
-        <input class="student" type="email" placeholder="Email" required>
-        <input class="student" type="text" placeholder="GPA" required>
-        <input class="student" type="text" placeholder="Age" required>
-        <input class="student" type="text" placeholder="Drgree" required>
+      <input class="student" type="text" placeholder="Name" required />
+      <input class="student" type="email" placeholder="Email" required />
+      <input class="student" type="text" placeholder="GPA" required />
+      <input class="student" type="text" placeholder="Age" required />
+      <input class="student" type="text" placeholder="Drgree" required />
     </form>
 
-    <div class="btn">
-    <div class="button">Add Student</div>
+    <div class="row">
+        <div class="btn">
+            <div class="data">Add Student</div>
+        </div>
+
+        <div class="btn closed">
+            <div class="data">Edit Student</div>
+        </div>
     </div>
 
     <!-- Search bar -->
     <form action="#" id="searchBar">
-        <input type="text" placeholder="Search By Name, email or degree">
+      <input type="text" id="searchText" placeholder="Search By Name, email or degree" />
     </form>
 
     <!-- Table -->
     <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Student Name</th>
-                <th>Email</th>
-                <th>Age</th>
-                <th>GPA</th>
-                <th>Degree</th>
-            </tr>
-        </thead>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Student Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>GPA</th>
+          <th>Degree</th>
+        </tr>
+      </thead>
 
-        <tbody>
-            <tr>
-                <td>100320</td>
-                <td>Mohd Talib</td>
-                <td>abc@gmail.com</td>
-                <td>24</td>
-                <td>83.33</td>
-                <td>Mca
-                        <img src="./assets/edit 1.png" alt="">
-                        <img src="./assets/trash-2 1.png" alt="">
-                </td>
-            </tr>
-
-            <tr>
-                <td>100320</td>
-                <td>Mohd Talib</td>
-                <td>abc@gmail.com</td>
-                <td>24</td>
-                <td>83.33</td>
-                <td>Mca</td>
-            </tr>
-        </tbody>
+      <tbody id="tbdy">
+        
+      </tbody>
     </table>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
